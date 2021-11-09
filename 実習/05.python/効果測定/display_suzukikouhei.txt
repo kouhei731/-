@@ -1,0 +1,7 @@
+f = open('date.txt', 'w')
+
+f.write('EijunSawamura,58,63,46,167,55\n')
+f.write('ToruHuruya,63,59,65\n')
+f.write('HaruichiKominato,74,83,77\n')
+
+f.close()

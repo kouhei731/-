@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+      <mata charset="utf-8">
+      <title>配列を使ってみよう</title>
+　</head>
+
+　<body>>
+      <script>
+          prompt("名前を入力してください",);
+
+          var names = new Array(4);
+          names[0] = "山田太郎";
+          names[1] = "中山一郎";
+          names[2] = "井上花子";
+          names[3] = "江藤桜";
+          /*
+          document.write("<h2>こんにちは", names[0], "さん</h2>");
+          document.write("<h2>こんにちは", names[1], "さん</h2>");
+          */
+          for (var i = 0; i <= (names.length - 1); i++) {
+              document.write("<h2>こんにちは", names[i], "さん</h2>");
+          }
+      </script>
+</body>
+</html>

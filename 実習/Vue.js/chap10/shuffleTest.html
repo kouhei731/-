@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Vue.js sample</title>
+		<link rel="stylesheet" href="style.css" >
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+	</head>
+	
+	<body>
+		<h2>クリックしたらシャッフルする例</h2>
+    <button onclick="shuffleData()">シャッフル</button>
+		<script>
+
+      var dataArray=['one','two','three','four','five'];
+      function shuffleData(){
+
+        var buffer = [];
+
+        var len = this.dataArray.length;
+
+        for (var i=len; len>0; len--){
+
+        var r = Math.floor(Math.random() *len);
+
+        buffer.push(this.dataArray[r]);
+
+        this.dataArray.splice(r,1);
+        }
+
+        this.dataArray = buffer;
+
+        alert(dataArray)
+      }
+
+		</script>
+	</body>
+</html>

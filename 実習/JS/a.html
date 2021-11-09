@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>オブジェクトのメソッド</title>
+</head>
+
+<body>
+    <script>
+        var player = new Object();
+        var player = {name: "Ronaldo", team: "Juventus"};
+        player.uniNumber = 7;
+        player["nation"] = "Portugal";
+        var note = "mvp";
+        var cnt = 5;
+        player[note] = cnt;
+        var hist = [ "Sporting", "Man united", "RealMadrid"];
+        player.history = hist;
+        comsole.log(player.history[0]);
+        for (var k in player) {
+          console.log("項目: " + k);
+          console.log("内容: " + player[k]); 
+          }
+        var date = [ "ronald", "messi", "meymar"];
+
+        Array.prototype.mesoddo = function(){}
+        for (var key in date){
+          console.log(data[key]);
+        }  
+        var propaty = Object.keys(player);
+        for (var i=0; i < propaty.length; i++) {
+          console.log("項目: " + propaty[i]);
+          console.log("内容: " + player[propaty[i]]);  
+        }
+        
+    </script> 
+</body>
+</html>

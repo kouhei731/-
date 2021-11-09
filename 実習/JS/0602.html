@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+      <mata charset="utf-8">
+      <title>オブジェクトのメソッドを使う</title>
+
+    </head>
+
+<body>>
+        <script>
+　　　　　　　var now, date;
+             now = new Date();
+             date = now.getFullYear() + "年" +
+                 (now.getMonth() + 1) + "月" +
+                 now.getDate() + "日";
+              document.write("<h1>", date, "</h1>");
+
+              var gantan, days, diff;
+              gantan = new Date(now.getFullYear() + 1, 0, 1);
+              diff = gantan.getTime() - now.getTime();
+              days = Math.ceil(diff / (24 * 60 * 60 * 1000));
+              document.write("<h1>今年の残り日数:", days, "</h1>");
+          </script>
+    </p>
+</body>
+</html>oji

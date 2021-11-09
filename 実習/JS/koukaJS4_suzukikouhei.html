@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+      <meta charset="utf-8">
+      <title>JavaScript効果測定</title>
+
+  </head>
+
+<body>
+        <script>
+        var days = new Array("月", "火", "水", "木", "金", "土", "日");
+        var date = new Date();
+        document.write("今日は、" +date.getFullYear() + "年" + 
+        (date.getMonth() + 1) + "月" +
+        date.getDate() + "日です。<br>");
+        
+        var min = 1 ;
+        var max = 100 ;
+        var a = Math.floor(Math.random() * (max + 1 - min) ) + min ;
+        //1~100までの乱数を作成
+        document.write("<p>生成した乱数は78です。</p>")
+
+        date.setDate(date.getDate()+ 50);
+        document.write("今日の"+78+"日後は、", date.getFullYear() + "年" + 
+        (date.getMonth() + 1) + "月" +
+        (date.getDate()) + "日です。<br>");
+        var day = days[date.getDate()];
+        document.write("<p>その日は、" + day + "曜日です。</p>");
+        </script>
+</body>
+</html>

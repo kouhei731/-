@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+      <mata charset="utf-8">
+      <title>if文のテスト</title>
+</head>
+
+<body>
+    <script>
+        var month;
+        month = prompt("月を入力してください", 1);
+         
+        if((month == 12) || (month == 1) || (month == 2)) {
+            document.write("<h1>冬</h1>");
+        } else if ((month >= 3) && (month <= 5)) {
+            document.write("<h1>春</h1>");
+        } else if ((month >= 6) && (month <= 8)) {
+            document.write("<h1>夏</h1>");
+        } else if ((month >= 9) && (month <= 11)) {
+            document.write("<h1>秋</h1>");
+        } else {
+            document.write("<h1>1から12の値を入力してください</h1>");  
+        }
+    </script>
+</body>
+</html>

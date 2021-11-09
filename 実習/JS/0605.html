@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+      <mata charset="utf-8">
+      <title>リンカーやアンカーを設定する</title>
+　</head>
+
+　<body>>
+      <script>
+          var title1 = "ページの先頭";
+          var anchor1 = title1.anchor("pTop");
+          document.write("<h1>", anchor1, "</h1>");
+
+          var url = "http://google/co.jp";
+          var text = "Google".link(url) + "で検索";
+          document.write("<h1>", text, "</h1>");
+
+          for (i = 0; i < 10; i++) {
+               document.write("<h2>hello</h2>");   
+          }
+
+          var toAnchor1 = "ページのトップへ".link("#pTop");
+          document.write("<h2>", toAnchor1, "</h2>");
+　　　</script>
+</body>
+</html>

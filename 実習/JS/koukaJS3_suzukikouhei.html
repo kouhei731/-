@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+      <meta charset="utf-8">
+      <title>JavaScript効果測定</title>
+
+</head>
+
+<body>
+        <script>
+          var i,start,end,end2,goal;
+          var start = Number(prompt("開始数を入力してください",0));//開始数
+          var end   = Number(prompt("終了数を入力してください",0));//終了数
+          var end2  = Number(prompt("数を入力してください",0));
+          var goal  = 0;
+          for (i = start; i <= end; ++) {
+            goal = goal + i
+          }
+          document.write("<h1>　開始数", start, "<br>");
+          document.write("<h1>　終了数", end, "<br>");
+          document.write("<h1>　までの指定された数値11の倍数の合計=", goal, "<br>");
+          document.write("<h1>　までの指定された数値11の倍数の合計=", goal, "<br>");
+          document.write(goal);
+
+        </script>
+</body>
+</html>

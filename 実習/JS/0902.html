@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+      <meta charset="utf-8">
+      <title>a</title> 
+    <script>
+          function Person(name, height) {
+              this.name = name;
+              this.height = height;
+          } 
+
+          function calcWeight() {
+              var Weight;
+              Weight = (this.height - 100) * 0.9;
+              return Weight;
+          }
+          Person.prototype.stdWeight = calcWeight;
+    </script>
+</head>
+
+<body>
+    <script>
+        var friends = new Array(5);
+        friends[0] = new Person("山田太郎", 160);
+        friends[1] = new Person("田中花子", 165);
+        friends[2] = new Person("猫山一郎", 180);
+        friends[3] = new Person("猫山一郎2", 185);
+        friends[4] = new Person("猫山一郎3", 190);
+
+        for (var i = 0; i <= friends.length - 1; i++) {
+            document.write("<p>", friends[i].name, ": ",
+                 friends[i].height, "cm ->",
+                 friends[i].stdWeight(), "kg</p>");
+        }
+    </script>
+</body>
+</html>

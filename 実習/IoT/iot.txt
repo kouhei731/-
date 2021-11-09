@@ -1,0 +1,1 @@
+HostName=kouhei2035247.azure-devices.net;DeviceId=RaspberryPi;SharedAccessKey=jdkgMBbFXrHqoaTzNjAWpWhQelMbY95N8NF9st+pcfg=

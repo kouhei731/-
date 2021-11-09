@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+      <mata charset="utf-8">
+      <title>ユーザ定義関数の作成</title>
+      <script>
+          function dolltoyen(doll, rate) {
+              var ye;
+              yen = doll * rate;
+              return yen; 
+          }
+      </script>  
+    </head>
+
+<body>
+    <p style="font-size: 200%;">
+        <script>
+            var yen1 = dolltoyen(100, 90);
+            document.write(yen1, "円<br>");
+
+            var doll2 = 50;
+            var rate2 = 88; 
+            var yen2 = dolltoyen(doll2, rate2);
+            document.write(yen2, "円<br>");
+        </script>
+    </p>
+</body>
+</html>

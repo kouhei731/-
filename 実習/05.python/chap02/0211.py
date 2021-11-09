@@ -1,0 +1,12 @@
+s=input('整数a:')
+a=int(s)
+s=input('整数b:')
+b=int(s)
+
+print('a+bは', a+b, 'です。')
+print('a-bは', a-b, 'です。')
+print('a*bは', a*b, 'です。')
+print('a/bは', a/b, 'です。')
+print('a//bは', a//b, 'です。')
+print('a%bは', a%b, 'です。')
+print('a**bは', a**b, 'です。')

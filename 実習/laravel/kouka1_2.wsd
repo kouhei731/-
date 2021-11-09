@@ -1,0 +1,20 @@
+@startuml kouka1_1.wsd
+actor ユーザ
+boundary ブラウザ
+control web.php
+control Kouka1_2Controller
+boundary inputblade.php
+boundary Kouka1_2Request
+boundary outputblade.php
+
+ユーザ -> ブラウザ:該当ページをリクエスト[/kouka1_2]
+ブラウザ -> web.php: GET[/kouka1_2]
+web.php -> Kouka1_2Controller:@index
+Kouka1_2Controller->inputblade.php
+ユーザ -> inputblade.php:送信ボタンを押下
+inputblade.php->web.php:POST
+web.php->Kouka1_2Controller:@post
+Kouka1_2Controller->Kouka1_2Request:フォームリクエスト
+Kouka1_2Request-->Kouka1_2Controller
+
+@enduml

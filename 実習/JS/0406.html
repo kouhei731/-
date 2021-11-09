@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+      <mata charset="utf-8">
+      <title>数当てゲーム</title>
+</head>
+
+<body>
+    <script>
+　　　　　var ANS = 23;
+         var num;
+         var msg = "数を入力してください"
+         while (true) {
+            num = prompt(msg, 0);
+            if (ANS == num) {
+                document.write("<h1>正解です</h1>")
+                break
+
+            　}          
+            joutei =ANS + 3 
+            katei =ANS - 3
+            if((num>katei)&&(num<jooutei)){
+              msg =惜しい 
+            }
+            　else if (num < ANS) {
+                msg = "もっと大きい数を入力してください";
+            　}　else if (num > ANS)  {
+                   msg = "もっと小さい数を入力してください";
+              }  else{
+                msg = "数を入力してください"
+              } 
+
+
+          }
+            
+
+        
+    </script>
+</body>
+</html>   

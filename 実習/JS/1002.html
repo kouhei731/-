@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+      <meta charset="utf-8">
+      <title>おみくじプログラム</title> 
+   　 <style>
+          body {
+              text-align: center;
+          } 
+
+          #myArea {
+              background: yellow;
+          }
+      </style>    
+    <script>
+       var kuji = new Array(4);
+       kuji[0] = "<h1 style='color:green'>大吉</h1>" ;
+       kuji[1] = "<h2>中吉</h2>";
+       kuji[2] = "<h3>小吉</h3>";
+       kuji[3] = "<h4 style='color:red'>凶</h4>" ;
+
+       function unsei(){
+           var myArea = document.getElementById("myArea")
+           var num = Math.floor(kuji.length * Math.random());
+           myArea.innerHTML = kuji[num]; 
+           myArea.style.textAlign = "left";
+           myArea.style.backgroundImage = "url(images/back.jpg)";
+           }
+           var visible = true;
+           function showHide(){
+              var myArea = document.getElementById("myArea");
+              var btn = document.getElementById("showBtn");
+              if (visible) {
+                 myArea.style.visibility = "hidden";
+                 btn.value = "表示する";
+              } else {
+                  myArea.style.visibility = "visible";
+                  btn.value = "隠す";
+              }
+              visible = !visible; 
+           }
+       
+    </script>
+</head>
+
+<body>
+    <h1>今日の運勢</h1>
+    <form><p>
+        <input type="button" value="占う" name="calc" onclick="unsei();">
+        <input type="button" id="showBtn" value="隠す" onclick="showHide();">
+    </p></form>
+    <div id="myArea">
+        <h1>今日はどんな運勢でしょう？</h1>
+    </div>        
+</body>
+</html>

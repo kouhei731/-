@@ -1,0 +1,6 @@
+vertical=input('縦を入力=')
+horizontal=input('横を入力=')
+area=int(vertical)*int(horizontal)
+print('縦',':',vertical,)
+print('横',':',horizontal,)
+print('面積',':',area,)

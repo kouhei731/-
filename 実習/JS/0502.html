@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+      <mata charset="utf-8">
+      <title>実数のスコープ</title>
+      <script>
+          function testFunc() {
+              //var num;
+              num = 5;
+          }
+      </script>  
+    </head>
+
+<body>
+    <p style="font-size: 200%;">
+        <script>
+            var num = 3;
+            testFunc();
+            document.write(num, "<br>");
+        </script>
+    </p>
+</body>
+</html>

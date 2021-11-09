@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>navigatorオブジェクト</title>
+</head>
+
+<body>
+    <script>
+        /*
+        for (var prop in navigator) {
+            document.write("<p>", prop, ":",
+            navigator[prop], "</p>");
+        }
+        */
+        var platform = navigator.platform;
+        if (platform.indexOf("mac") >= 0) {
+           document.write("<h1>こんにちはMacユーザーのさん</h1>");
+        } else if (platform.indexOf("Win") >= 0) {
+           document.write("<h1>こんにちわはWinユーザーさん</h1>");
+        } else {
+            document.write("<h1>こんにちはその他OSのユーザーさん</h1>");
+        }
+    </script> 
+</body>
+</html>

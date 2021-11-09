@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+      <meta charset="utf-8">
+      <title>アニメーション</title> 
+   　 <style>
+          #car {
+              position:absolute;
+              top:300px;
+              left:0px;
+              height:500px;
+              width:150px;
+          }
+      </style>    
+    <script>
+        var INTERVAL =1;
+        var x =0;
+        var animating = false;
+        var timer;
+
+        function move(){
+            aCar = document.getElementById("car");
+            x = x + 5;
+            aCar.style.left = x + "px";
+            aCar.style.top = x + "px";
+
+            if (x > 1500) {
+                x = 0;
+            }
+            timer = setTimeout("move()", INTERVAL);
+        }
+
+        function startStop(){
+            if (animating) {
+                clearTimeout(timer);
+                document.getElementById("sBtn").value = "スタート"
+            }else {
+               document.getElementById("sBtn").value = "ストップ"
+               move();
+            }
+            animating = !animating;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>DOMによるアニメーション</h1>
+    <form><p>
+        <input type="button" id="sBtn" value="スタート"
+               onclick="startStop()">
+    </p></form>
+
+    <div id="car">
+         <img src="images/car.jpg" alt="車">
+    </div>
+       
+    <script>
+
+    </script>
+</body>
+</html>

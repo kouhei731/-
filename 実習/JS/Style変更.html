@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+      <meta charset="utf-8">
+      <title>おみくじプログラム</title> 
+   　 <style>
+          body {
+              text-align: center;
+          } 
+
+          #myArea {
+              background: yellow;
+          
+
+
+              
+          }
+      </style>    
+    <script>
+       var kuji = new Array(4);
+       kuji[0] = "<h1 style ='color:green'>大吉</h1>" ;
+       kuji[1] = "<h2 style = 'color:yellow'>中吉</h2>";
+       kuji[2] = "<h3>小吉</h3>";
+       kuji[3] = "<h4 style='color:red'>凶</h4>" ;
+
+       function unsei(){
+           var myArea = document.getElementById("myArea")
+           var num = Math.floor(kuji.length * Math.random());
+           myArea.innerHTML = kuji[num];  
+       }
+    </script>
+</head>
+
+<body>
+    <h1>今日の運勢</h1>
+    <from><p>
+        <input type="button" value= "占う" name="calc" onclick="unsei();">
+    </P></from>
+    <div id="myArea">
+        <h1>今日はどんな運勢でしょう？</h1>
+    </div>        
+    <script>
+
+    </script>
+</body>
+</html>
